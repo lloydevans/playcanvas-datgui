@@ -30,8 +30,6 @@ export class PcDatGui extends pc.ScriptType {
    * Called when script is about to run for the first time.
    */
   public initialize(): void {
-    this.gui.useLocalStorage = false;
-
     this.picker = new pc.Picker(this.app, 1024, 1024);
 
     this.app.mouse.on(pc.EVENT_MOUSEDOWN, this.onSelect, this);
@@ -65,7 +63,7 @@ export class PcDatGui extends pc.ScriptType {
 
     this.app.keyboard.on(pc.EVENT_KEYDOWN, this.onKeyDown, this);
 
-    this.gui.domElement = window.document.getElementsByClassName("main")[0] as HTMLDivElement;
+    this.gui.useLocalStorage = false;
     this.gui.domElement.style.webkitTransition = "opacity 0.5s;";
     this.gui.domElement.style.transition = "opacity 0.5s;";
 
