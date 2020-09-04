@@ -1,6 +1,6 @@
 {
   "name": "playcanvas-datgui",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Some simple bindings between playcanvas and dat.gui for easily creating debug UI and demos.",
   "main": "build/es/index.js",
   "types": "build/dts/index.d.ts",

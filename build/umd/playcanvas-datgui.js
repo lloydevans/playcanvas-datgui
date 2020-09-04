@@ -175,9 +175,9 @@
                 entries.forEach(function (el, i) {
                     var scriptKey = el[0];
                     var scriptObject = el[1];
-                    var f = _this.addScriptInstance(scriptObject.instance, scriptKey, _folder_1);
+                    var scriptFolder = _this.addScriptInstance(scriptObject.instance, scriptKey, _folder_1);
                     if (open) {
-                        f.open();
+                        scriptFolder.open();
                     }
                 });
                 if (open) {
@@ -331,6 +331,7 @@
             }
         };
         /**
+         * Key event listener callback.
          *
          * @param event
          */

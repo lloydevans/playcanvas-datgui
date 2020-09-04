@@ -88,6 +88,7 @@ export declare class PcDatGui extends pc.ScriptType {
      */
     private onSelect;
     /**
+     * Key event listener callback.
      *
      * @param event
      */
@@ -95,19 +96,19 @@ export declare class PcDatGui extends pc.ScriptType {
 }
 export interface PcDatGui {
     /**
-     * Set menu content by selection.
+     * Toggle menus.
      */
     open: boolean;
 }
 export interface PcDatGui {
     /**
-     * Set menu content by selection.
+     * Menu opacity.
      */
     opacity: number;
 }
 export interface PcDatGui {
     /**
-     * Set menu content by selection.
+     * Panel width.
      */
     width: number;
 }
@@ -119,13 +120,13 @@ export interface PcDatGui {
 }
 export interface PcDatGui {
     /**
-     * Set menu content by selection.
+     * Enable/disable key commands.
      */
     keyCommandsEnabled: boolean;
 }
 export interface PcDatGui {
     /**
-     * Set menu content by selection.
+     * Require the alt key to be pressed for keyboard shortcuts.
      */
     requireAltKey: boolean;
 }
