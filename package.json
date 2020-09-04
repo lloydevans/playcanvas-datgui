@@ -31,12 +31,12 @@
     "playcanvas": "^1.34.0",
     "tslib": "^2.0.1"
   },
-  "homepage": "https://github.com/lloydevans/node-hips2fits#readme",
+  "homepage": "https://github.com/lloydevans/playcanvas-datgui#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lloydevans/node-hips2fits.git"
+    "url": "git+https://github.com/lloydevans/playcanvas-datgui.git"
   },
   "bugs": {
-    "url": "https://github.com/lloydevans/node-hips2fits/issues"
+    "url": "https://github.com/lloydevans/playcanvas-datgui/issues"
   }
 }
