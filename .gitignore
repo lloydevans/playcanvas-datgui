@@ -1,3 +1,7 @@
+build/es
+project
+pcconfig.json
+
 # Logs
 logs
 *.log

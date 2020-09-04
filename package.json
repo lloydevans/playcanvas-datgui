@@ -1,0 +1,34 @@
+{
+  "name": "playcanvas-datgui",
+  "version": "0.0.0",
+  "description": "Some simple bindings between playcanvas and dat.gui for easily creating debug UI and demos.",
+  "main": "build/es/index.js",
+  "types": "build/dts/index.d.ts",
+  "scripts": {
+    "start": "npm run build",
+    "build": "npm run build-umd && npm run build-es && npm run build-dts",
+    "build-umd": "npx --no-install rollup --config rollup.config.js --external dat.gui --file build/umd/playcanvas-datgui.js",
+    "build-es": "tsc --outDir build/es --sourcemap --target es5 --module es2015",
+    "build-dts": "tsc --outDir build/dts --declaration --emitDeclarationOnly",
+    "watch-umd": "npm run build-umd -- -w",
+    "version": "npm i && npm run build && git add . -A"
+  },
+  "author": "Lloyd Evans",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-typescript": "^5.0.2",
+    "rollup": "^2.26.9",
+    "rollup-plugin-uglify": "^6.0.4",
+    "typescript": "^4.0.2"
+  },
+  "files": [
+    "/build"
+  ],
+  "dependencies": {
+    "@types/dat.gui": "^0.7.5",
+    "dat.gui": "^0.7.7",
+    "playcanvas": "^1.34.0",
+    "tslib": "^2.0.1"
+  }
+}
