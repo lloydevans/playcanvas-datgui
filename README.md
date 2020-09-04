@@ -18,4 +18,6 @@ Add the component to an object in the scene and view the inspector properties fo
 
 ### With es module
 
+`npm i -S playcanvas-datgui`
+
 Import this module into your bundle and it will register itself as a script. It requires the dat.gui dependency.
